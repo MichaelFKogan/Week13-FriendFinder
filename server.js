@@ -82,6 +82,10 @@ var userData = [
 
 // START THE SERVER
 // =============================================================================
-app.listen(PORT);
-console.log('Listening on port http://localhost.' + PORT);
+// app.listen(PORT);
+// console.log('Listening on port http://localhost.' + PORT);
+
+https.listen(process.env.PORT || 3000, function(){
+  console.log('listening on', http.address().port);
+});
 
